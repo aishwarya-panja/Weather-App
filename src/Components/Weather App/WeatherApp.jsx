@@ -10,9 +10,11 @@ import snow_icon from '../Assets/snow.png'
 import wind_icon from '../Assets/wind.png'
 
 
+
+
 const WeatherApp = () => {
 
-  let api_key = "27334e4324e3f83e589fd20611f5392a" ;
+  let api_key = process.env.REACT_APP_API_KEY ;
 
   // to get the icon modified according to weather
   const[wicon, setWicon] = useState(cloud_icon) ;
